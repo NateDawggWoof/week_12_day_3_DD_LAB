@@ -2,7 +2,7 @@ package characters;
 
 import java.util.ArrayList;
 
-public abstract class CharacterBasicStats {
+public abstract class GameCharacter {
 
 
     private String name;
@@ -16,7 +16,7 @@ public abstract class CharacterBasicStats {
 
 
 
-    public CharacterBasicStats(String name, int hp, int strength, int defence, int agility) {
+    public GameCharacter(String name, int hp, int strength, int defence, int agility) {
         this.name = name;
         this.hp = hp;
         this.strength = strength;

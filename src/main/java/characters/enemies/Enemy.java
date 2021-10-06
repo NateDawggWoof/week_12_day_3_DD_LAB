@@ -1,8 +1,8 @@
 package characters.enemies;
 
-import characters.CharacterBasicStats;
+import characters.GameCharacter;
 
-public abstract class Enemy extends CharacterBasicStats {
+public abstract class Enemy extends GameCharacter {
 
 
     public Enemy(String name, int hp, int strength, int defence, int agility) {
