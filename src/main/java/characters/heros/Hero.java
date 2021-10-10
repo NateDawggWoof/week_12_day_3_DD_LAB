@@ -1,4 +1,6 @@
-package characters;
+package characters.heros;
+
+import characters.GameCharacter;
 
 public class Hero  extends GameCharacter {
 

@@ -1,4 +1,4 @@
-import characters.Hero;
+import characters.heros.Hero;
 import quests.Quest;
 
 import java.util.ArrayList;
