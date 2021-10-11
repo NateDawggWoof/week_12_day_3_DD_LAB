@@ -4,8 +4,10 @@ import items.Item;
 import items.Weapon;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public abstract class GameCharacter {
+public class GameCharacter implements Comparator<GameCharacter>, Comparable<GameCharacter>{
+
 
 
     private String name;
@@ -16,6 +18,8 @@ public abstract class GameCharacter {
     private Item slot1;
     private Item slot2;
     private ArrayList<Item> inventory;
+    public GameCharacter() {
+    }
 
 
 
@@ -105,5 +109,15 @@ public abstract class GameCharacter {
             return (Weapon) getSlot1();
         }
         return null;
+    }
+
+    // Overriding the compareTo method
+    public int compareTo(GameCharacter gc) {
+        return (this.agility).compareTo(gc.agility);
+    }
+
+    // Overriding the compare method to sort the age
+    public int compare(GameCharacter gc, GameCharacter gc1) {
+        return gc.agility - gc1.agility;
     }
 }
